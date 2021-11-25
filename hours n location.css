@@ -1,0 +1,85 @@
+.main {
+	height: 1500px;
+}
+
+.title {
+	font-family: 'Lilita One' , cursive;
+	font-size: 120px;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 30px;
+	background: linear-gradient(to right, red, violet, blue);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.row-div {
+	display: flex;
+	flex-direction: row;
+}
+
+.subtitle {
+	font-family: 'Rammetto One', cursive;
+	font-size: 50px;
+	text-shadow: 2px 2px 5px #4c4c48, 2px 2px 5px #4c4c48,
+	             6px 6px 7px #6b6b67, 6px 6px 7px #6b6b67,
+				 10px 10px 10px #949491, 10px 10px 10px #949491,
+				 13px 13px 14px #b8b8b5, 13px 13px 14px #b8b8b5;
+}
+
+.info {
+	font-family: 'Oregano', cursive;
+	font-size: 40px;
+	margin-top: -30px;
+	background-color: #fbec03;
+}
+
+.holiday {
+	font-family: 'Oleo Script Swash Caps', cursive;
+	font-size: 40px;
+	text-align: center;
+}
+
+.date {
+	font-family: 'Germania One', cursive;
+	font-size: 37px;
+	margin-left: 20px;
+	margin-top: 50px;
+	height: 35px;
+	color: #1283c1;
+	text-align: center;
+}
+
+
+table, td {
+	border: 3px solid #f2a90d;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+  }
+  tr:nth-child(odd) {
+    background-color: #fff;
+  }   
+
+.affected {
+	color: white;
+	font-family: 'Fredoka One' , cursive;
+	font-size: 35px;
+	margin-left: 20px;
+	margin-top: 50px;
+    margin-bottom: 0px;	
+	background: radial-gradient(red, blue, violet);
+	border-radius: 10px;
+	height: 50px;
+	width: 300px;
+	text-align: center;
+}
+
+.extra {
+	font-family: 'Lobster', cursive;
+	font-size: 30px;
+	margin-left: 50px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}

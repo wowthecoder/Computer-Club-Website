@@ -1,0 +1,84 @@
+.main {
+	height: 2300px;
+}
+
+.title {
+	font-family: 'Lilita One', cursive;
+	font-size: 120px;
+	background: linear-gradient(to right, #167807, #5eda1f, #e3f621);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-align: center;
+	padding-top: 30px;
+	text-transform: uppercase;	
+}
+
+.teacher {
+	height: 500px;
+	position: relative;
+	background-color: #082f92;
+	display: flex;
+	flex-direction: row;
+}
+
+.intro {
+	font-family: 'Paytone One', sans-serif;
+	font-size: 35px;
+	margin: 10px 0px 20px 50px;
+}
+
+.name {
+	font-family: 'Luckiest Guy', cursive;
+	font-size: 47px;
+	color: white;
+	position: absolute;
+	left: 20%;
+	top: 10%;
+}
+
+.class {
+	font-family: 'Chewy', cursive;
+	font-size: 50px;
+	color: white;
+	position: absolute;
+	left: 20%;
+	top: 33%;
+}
+
+.pho-num {
+	font-family: 'Fascinate Inline', cursive;
+	font-size: 50px;
+	color: white;
+	position: absolute;
+	left: 20%;
+	top: 45%;
+}
+
+.president {
+	height: 500px;
+	position: relative;
+	background-color: #b420ea;
+	display: flex;
+	flex-direction: row;
+}
+
+.mid {
+	height: 100px;
+	font-family: 'Fredoka One', cursive;
+	font-size: 40px;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+
+.links {
+	color: blue;
+	font-size: 35px;
+	margin-top: 60px;
+	font-family: 'Kreon', serif;
+}
+
+.row {
+	display: flex; 
+	flex-direction: row;
+	margin-left: 50px;
+}

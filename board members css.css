@@ -1,0 +1,53 @@
+.main-section {
+	height: 2100px;
+	background-color: #61b2f8;
+}
+
+.title {
+	font-size: 120px;
+	font-family: 'Lilita One', cursive;
+	padding-top: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	background: linear-gradient(to right, orange, yellow, green, blue, violet); /* 1st and last colour invisible */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.left-text {
+	color: white;
+	font-size: 60px;
+	font-family: 'Germania One', cursive;
+	margin-top: 40px;
+	margin-left: 50px;
+	text-shadow: -3px 3px 5px #ff0000, -6px 6px 5px #f99506, -9px 9px 5px #faeb04;
+}
+
+.row-div {
+	display: flex;
+	flex-direction: row;
+}
+
+.position {
+	font-family: 'Indie Flower', cursive;
+	font-size: 40px;
+	margin-top: 50px;
+	margin-left: 30px;
+}
+
+.name {
+	font-family: 'Lobster', cursive;
+	font-size: 50px;
+	margin-top: 40px;
+	margin-left: 30px;
+	text-shadow: 0 3px #4c4c46, 0 6px #80807b, 0 8px #b3b3ad;
+}
+
+.class {
+	color: #2ff506;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 50px;
+	margin-top: 40px;
+	margin-left: 50px;
+	text-shadow: 0 0 20px #ca06f5, 0 0 20px #ca06f5, 0 0 20px #ca06f5; /* three glow effects of the same colour to strengthen the glow effect as eac one is diffused*/
+}

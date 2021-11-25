@@ -1,0 +1,253 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+	position: relative;
+	height: 130px;
+	background-color: black;
+	display: flex;
+    flex-direction: row;
+}
+
+.link-to-pages {
+	color: white;
+	font-family: "Srisakdi", cursive;
+	font-size: 40px;
+	margin-top: 70px;
+}
+
+.link-to-pages:hover {
+	cursor: pointer;
+    color: #f24848;
+}
+
+.dropdown-content {
+	display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;/* appear in front */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content{display:block}
+
+.dropdown:hover #About-Us{color: #f24848}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+.schoolname {
+	color: white;
+	font-family: 'Laila', serif;
+	font-size: 35px;
+	position: absolute;
+	left: 15%;
+	top: 0%;
+}
+
+.steve-jobs {
+	margin-left:20px; 
+	border:3px solid green; 
+	float:left; 
+	margin-right:20px;
+}
+
+.quote {
+	margin-top:50px; 
+	font-family: 'Dosis', sans-serif;
+	font-size: 50px;
+	color: #45bf0e;
+}
+
+hr {
+    height: 7px;
+    background-color:black;
+    color:black;
+}
+
+.last-section {
+	height: 500px;
+	margin-top: 20px;
+	background-color: #122c9a;
+}	
+
+.text1 {
+	font-family: 'Acme', sans-serif;
+	margin-top: -400px;
+	margin-left: 380px;
+	margin-right: 350px;
+	text-align: center;
+	font-size: 60px;
+	color: white;
+}
+
+.sign-up {
+	display: inline-block;
+	outline: none;
+	border: 8px solid #ee0cf4;
+	font-family: "Arvo" , serif;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: white;
+	height: 80px;
+	width: 300px;
+	border-radius: 15px;
+	margin-left: 40%;
+	margin-top: 30px;
+	background-color: #122c9a;
+}
+
+.sign-up:hover {
+	cursor: pointer;
+	color: black;
+	border: none;
+	background-color: yellow;
+}
+
+footer {
+	position: relative;
+	height: 180px;
+	background-color: black;
+	display: flex;
+    flex-direction: row;
+}
+
+.footer-text {
+	color: white;
+	font-family: 'Srisakdi', cursive;
+	font-size: 40px;
+}
+
+.button1 {
+	display: inline-block;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 9px #999;
+    height:90px;
+    width: 90px;
+    background-size: contain;  
+	margin-top: 2%;
+}
+
+.button1:hover {
+    cursor: pointer;
+	filter: brightness(70%);
+}	
+
+.button1:active {
+	filter: brightness(70%);
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+#facebook {
+	background-image: url("img/facebook icon.png");
+	margin-left: 3%;
+}
+
+#twitter {
+	background-image: url("img/twitter icon.png");
+	margin-left: 3%;
+}
+
+#instagram {
+	background-image: url("img/instagram logo.jpg");
+	margin-left: 3%;
+}
+
+.button2 {
+	display: inline-block;
+	outline: none;
+	border: none;
+	background-color: Transparent;
+    background-size: contain;  
+	background-repeat: no-repeat;
+	margin-top: 2%;
+}
+
+#wesley {
+	background-image: url("img/wesley logo.png");
+	width: 100px;
+	height: 80px;
+	filter:  grayscale(100%);
+}
+
+#wesley:hover {
+	cursor: pointer;
+	filter: grayscale(0%);
+}
+
+#unity {
+	background-image: url("img/unity logo.png");
+	width: 110px;
+	height: 60px;
+	margin-left: 10px;
+}
+
+#unity:hover {
+	cursor: pointer;
+	filter: brightness(1000%);
+}
+
+#scratch {
+	background-image: url("img/scratch logo.png");
+	width: 80px;
+	height: 90px;
+	filter:  grayscale(100%);
+    margin-left: 20px;	
+}
+
+#scratch:hover {
+	cursor: pointer;
+	filter: grayscale(0%);
+}
+
+#microsoft {
+    background-image: url("img/microsoft logo.png");
+	width: 120px;
+	height: 55px;
+	filter:  grayscale(100%);
+	margin-left: 20px;
+}
+
+#microsoft:hover {
+	cursor: pointer;
+	filter: grayscale(0%);
+}
+
+#adobe {
+	background-image: url("img/adobe logo.png");
+	width: 120px;
+	height: 57px;
+	filter:  grayscale(100%);
+	margin-left: 20px;
+}
+
+#adobe:hover {
+	cursor: pointer;
+	filter: grayscale(0%) brightness(200%);
+}
+
+.copyright {
+	position: absolute;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	color: white;
+	margin-top: 80px;
+	margin-left: 80%;
+}
+	

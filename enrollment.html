@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WMSKL(I) Computer Club</title>
+<link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+<link rel="stylesheet" href="home page css.css">
+<link rel="stylesheet" href="enrollment.css">
+<link href="https://fonts.googleapis.com/css?family=Srisakdi" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Laila" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lilita+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Shojumaru" rel="stylesheet">
+</head>
+<body onload="display();"><!-- display space left and the reply after submit form-->
+<header>
+  <img src="img/logo.png" style="width: 9%; height: 100%; margin-left: 10px;">
+  <div class="schoolname">Wesley Methodist Kuala Lumpur (International) Computer Club</div>
+  <div class="link-to-pages" style="margin-left: 90px;" onclick="location.href='home.html'">Home</div>
+  <div class="dropdown">
+    <div class="link-to-pages" style="margin-left: 120px;" id="About-Us">About Us</div>
+    <div class="dropdown-content" style="margin-left: 120px;">
+      <a href="Intro to club.html">Introduction To Our Club</a>
+      <a href="board members.html">Board Members</a>
+      <a href="hours and location.html">Hours And Location</a>
+    </div>
+  </div>
+  <div class="link-to-pages" style="margin-left: 120px;" onclick="location.href='courses.html'">Courses</div>
+  <div class="link-to-pages" style="margin-left: 120px;" onclick="location.href='events.html'">Events</div>
+  <div class="link-to-pages" style="margin-left: 120px;" onclick="location.href='contacts.html'">Contacts</div>
+</header>
+<div class="main">
+  <div class="title">Enrollment</div>
+  <p class="intro">Made up your mind? Fill in the form below to become a member of the Computer Club of WMSKL(I).</p>
+  <p class="intro">*Spaces are limited.</p>
+  <div style="display: flex; flex-direction: row;">
+  <form style="margin-left: 50px; margin-right: 10%;" onsubmit="check()">
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Full Name" name="name" required>
+
+    <label for="psw"><b>Class</b></label>
+    <input type="text" placeholder="Enter Class" name="class" required>
+
+    <label for="id"><b>Student Id</b></label>
+    <input type="text" placeholder="Enter Student Id" name="id" required>
+	
+	<label for="email"><b>Email Address</b></label>
+    <input type="email" placeholder="Enter Email" name="email" required>
+	
+	<label for="pho num"><b>Mobile Phone Number(If you do not have a phone, enter one of your parent's)</b></label>
+    <input type="text" placeholder="Enter Phone Number" name="pho-num" required>
+	
+	<button type="submit" class="register">Register</button>
+  </form>
+  <div class="space">
+    <p>Space Left: </p> 
+	<div style="display: flex; flex-direction: row; margin-top: -80px;">
+      <p id="left"></p>
+	  <p> /90</p>
+    </div>
+  </div>
+  </div>
+  <p id="output" class="intro"></p>
+</div>
+<script>
+  var x = document.getElementById("left");
+  var y = document.getElementById("output");
+  var value = 90;
+  var text = "";
+  var answer;
+  function display() {
+    if (localStorage.getItem("Space Left")) {
+	  value = localStorage.getItem("Space Left");
+	} 
+    if (localStorage.getItem("Reply")) {
+	  answer = localStorage.getItem("Reply");
+	}
+	x.innerHTML = value;
+	if (answer != null) {
+	  y.innerHTML = answer;
+	}
+	setTimeout(remove, 7000);
+  }
+  function check() {
+    if (value > 0) {
+	  value -= 1;
+	  localStorage.setItem("Space Left", value);
+	  text = "Your enrollment form has been submitted successfully.";
+	  answer = text.fontcolor("green");
+	  localStorage.setItem("Reply", answer);
+	} 
+	else {
+	  text = "Sorry, your enrollment is not accepted.";
+	  answer = text.fontcolor("red");
+	  localStorage.setItem("Reply", answer);
+	}
+	if (value < 0) {
+	  value = 0;
+	  localStorage.setItem("Space Left", value);
+	}
+  }
+  function remove() {
+    localStorage.removeItem("Reply");
+	y.innerHTML = "";
+  }
+</script>
+<footer>
+  <div style="margin-left: 2%; width: 400px">
+    <div class="footer-text">Follow Us On:</div>
+    <a href="https://www.facebook.com/Multimedia-club-WMSKL-2259720000961699"><button class= "button1" id="facebook"></button></a>
+    <a href="https://twitter.com/MightyDragon555"><button class= "button1" id="twitter"></button></a>
+    <a href="https://www.instagram.com/multimedia_club_of_wmskl"><button class= "button1" id="instagram"></button></a>
+  </div>
+  <div>
+    <div class="footer-text">Supported By:</div>
+    <button class="button2" id="wesley" value="Open Window"
+    onclick="window.open('http://wms.edu.my/kl/')"></button>
+    <button class="button2" id="unity" value="Open Window"
+    onclick="window.open('https://unity3d.com/')"></button>
+    <button class="button2" id="scratch" value="Open Window"
+    onclick="window.open('https://scratch.mit.edu/')"></button>
+    <button class="button2" id="microsoft" value="Open Window"
+    onclick="window.open('https://www.microsoft.com/en-my')"></button>
+    <button class="button2" id="adobe" value="Open Window"
+    onclick="window.open('https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwihl9mzr_zgAhUEHisKHWBfAusYABAAGgJzZg&ae=1&ohost=www.google.com&cid=CAASE-RocoJxQGLnOyxCtaCoGwVxNw4&sig=AOD64_2U_VCn7p4S8iOmKFA0FP_3kGq3QQ&q=&ved=2ahUKEwifrNOzr_zgAhWD6nMBHd_MBnsQ0Qx6BAgOEAE&adurl=https://pixel.everesttech.net/3085/cq%3Fev_sid%3D3%26ev_ln%3Dadobe%26ev_lx%3Dkwd-15034010%26ev_crx%3D248218213336%26ev_mt%3De%26ev_n%3Dg%26ev_ltx%3D%26ev_pl%3D%26ev_pos%3D1t1%26ev_dvc%3Dc%26ev_dvm%3D%26ev_phy%3D1010274%26ev_loc%3D%26ev_cx%3D183940604%26ev_ax%3D12769366844%26ev_efid%3DEAIaIQobChMIoZfZs6_84AIVBB4rCh1gXwLrEAAYASAAEgI7RvD_BwE:G:s%26url%3Dhttp://www.adobe.com/sea/creativecloud.html%253Fsdid%253DY2KRH18X%2526mv%253Dsearch%2526ef_id%253DEAIaIQobChMIoZfZs6_84AIVBB4rCh1gXwLrEAAYASAAEgI7RvD_BwE:G:s%2526s_kwcid%253DAL!3085!3!248218213336!e!!g!!adobe%26gclid%3DEAIaIQobChMIoZfZs6_84AIVBB4rCh1gXwLrEAAYASAAEgI7RvD_BwE')"></button>
+  </div>
+  <div class="copyright">©WMSKL(I) Computer Club</div>
+</footer>
+</body>
+</html>

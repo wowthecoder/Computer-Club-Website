@@ -1,0 +1,63 @@
+.main {
+	height: 3500px;
+	background-color: #24e316;
+	background-image: url('https://image.freepik.com/free-vector/elegant-green-geometric-polygon-background_1035-13146.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.title {
+	font-family: 'Lilita One', cursive;
+	font-size: 110px;
+	text-align: center;
+	text-transform: uppercase;
+	background: linear-gradient(to right, blue, violet, purple);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	padding-top: 30px;
+}
+
+.prgrph {
+	font-family: 'Acme', sans-serif;
+	font-size: 25px;
+	margin: 15px 70px;
+}
+
+.subtitle {
+	font-family: 'Luckiest Guy', cursive;
+	font-size: 50px;
+	margin-left: 50px;
+	margin-top: 50px;
+	color: #f02109;
+	height: 50px;
+	
+}
+
+.subtitle:after {
+	content: 'Computer Lab Rules & Regulations';
+    background: linear-gradient(to top, rgba(240, 33, 9, 0) 20% , rgba(240, 33, 9, 0.5) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	transform: scaleY(-1);
+	display: block;
+	position: relative;
+	bottom: 20px;
+}
+
+.rules {
+	font-family: 'Cinzel', serif;
+	font-size: 30px;
+	color: white;
+	margin-top: 30px;
+}
+
+.row-div {
+	display: flex;
+	flex-direction: row;
+	margin-top: 50px;
+}
+
+.num {
+	margin-left: 50px;
+	margin-top: 30px;
+}
